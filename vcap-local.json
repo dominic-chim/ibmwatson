@@ -1,9 +1,0 @@
-module.exports={
-	conversation
-	{
-	  "url": "https://gateway.watsonplatform.net/conversation/api",
-	  "username": "b94f88c4-e96f-4fb9-9e18-3a13218df1c4",
-	  "password": "OATlYaM7oBl0",
-	  "workspace_id:"0d915365-433a-4741-bde1-174c678877a8"
-	}
-};
