@@ -9,7 +9,7 @@ applications:
 - services:
    - conversation-service
    - cloudantNoSQLDB-service
-  name: text-bot
+  name: dlc-demo-app-example-2
   command: npm start
   path: .
   memory: 512M
