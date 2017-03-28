@@ -35,7 +35,7 @@ var requestNoAuthDefaults = {
 };
 var weatherKey = process.env.WEATHER_API_KEY;
 var request = require('request');
-var WEATHER_URL = 'https://00ed4038-bc20-41cc-bf38-5fd7f924d748:6c1i7Bwlmd@twcservice.eu-gb.mybluemix.net/api/weather';
+var WEATHER_URL = process.env.WEATHER_URL ||'https://00ed4038-bc20-41cc-bf38-5fd7f924d748:6c1i7Bwlmd@twcservice.eu-gb.mybluemix.net/api/weather';
 module.exports = {
   /**
    * Returns the Geo location based on a city name
