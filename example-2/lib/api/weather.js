@@ -56,7 +56,7 @@ module.exports = {
 	
 	 var url = WEATHER_URL +'/v3/location/search';
 
-	 console.log(url, qString);
+	//console.log(url, qString);
     request({
       method: 'GET',
       url:url,
@@ -74,7 +74,7 @@ module.exports = {
         callback(body.errors[0].error.message);
       } else {
         debug('geoLocation for: %s is: %', params.name, JSON.stringify(body.location));
-		console.log(body)
+		//console.log(body)
 		
 		var source;
 		try {
@@ -140,7 +140,7 @@ module.exports = {
                      apiKey: weatherKey
                      };
           }
-	console.log(format(WEATHER_URL + '/v1/geocode/{latitude}/{longitude}/forecast/daily/{range}.json', _params));
+	//console.log(format(WEATHER_URL + '/v1/geocode/{latitude}/{longitude}/forecast/daily/{range}.json', _params));
      request({
       method: 'GET',
       url: format(WEATHER_URL + '/v1/geocode/{latitude}/{longitude}/forecast/daily/{range}.json', _params),
@@ -152,7 +152,7 @@ module.exports = {
         callback('Error getting the forecast: HTTP Status: ' + response.statusCode);
       } else {
         var forecastByDay = {};
-		console.log(body);
+		//console.log(body);
         body.forecasts.forEach(function(f) {
           // Pick night time forecast if day time isn't available from Weather API
           if (!forecastByDay[f.dow]) {
