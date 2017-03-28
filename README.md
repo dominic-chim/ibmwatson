@@ -14,6 +14,7 @@ originally in theory it allowed only american countries
 
 features added
 updated api calls
+conversation service now allows UK cities
 
 To Fix
 fix request for basic auth
